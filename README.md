@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# MessMaster - Full-Stack Mess & Canteen Management System
+# Mess Management - Full-Stack Mess & Canteen Management System
 
 A modern, responsive, production-ready Full-Stack Mess Management System built with **Spring Boot 3.x (Java 17+)** and **React 18 (Vite + Tailwind CSS)**. It digitizes customer records, attendance tracking, mess subscription billing, running ledger balances, operational expenses, and PDF reporting — replacing paper registers and SMS with integrated **WhatsApp Business Messaging (OTP verification, payment reminders, mess ending alerts)**.
 
@@ -112,6 +111,3 @@ app:
 ## License
 
 This project is licensed under the MIT License.
-=======
-# Mess-Management
->>>>>>> f099b3b3a217f9a0ce52a2cf04decf063df860c8
