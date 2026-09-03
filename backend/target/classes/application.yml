@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  application:
+    name: mess-management-backend
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+# JWT Security Config
+app:
+  jwt:
+    secret: ${JWT_SECRET:9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b}
+    expiration-ms: 86400000 # 24 hours
+    refresh-expiration-ms: 604800000 # 7 days
+  upload:
+    dir: ${UPLOAD_DIR:./uploads}
+  whatsapp:
+    api-url: ${WHATSAPP_API_URL:https://graph.facebook.com/v18.0}
+    phone-number-id: ${WHATSAPP_PHONE_NUMBER_ID:mock_phone_number_id}
+    access-token: ${WHATSAPP_ACCESS_TOKEN:mock_access_token}
+    enabled: ${WHATSAPP_ENABLED:false} # If false, uses Mock WhatsApp Service
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
